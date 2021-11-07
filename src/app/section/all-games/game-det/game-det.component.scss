@@ -1,0 +1,39 @@
+.container-detail {
+  display: flex;
+  background-image: url("../../../../assets/portada.jpg");
+  background-size: cover;
+  height: 70vh;
+  font-size: large !important;
+}
+
+.game-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
+}
+
+.det_game_title{
+    margin: 0 auto;
+}
+
+.det_struc {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  height: 80%;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  margin: 0 auto !important;
+}
+
+.caratula img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

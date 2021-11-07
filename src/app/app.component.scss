@@ -1,0 +1,34 @@
+.ubication {
+  height: 15rem;
+  background-image: url("../assets/full_home.jfif");
+  background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(28, 28, 28, 0.75),
+      rgba(28, 28, 28, 0.75)
+    ),
+    url(../assets/full_home.jfif);
+    color: #FFF;
+    padding: 5% 10px;
+    text-align: center;
+    position: relative;
+}
+.ubication p{
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 5%;
+    right: 5%;
+    font-size:3em;
+    font-weight: bolder;
+    text-decoration: overline;
+}
+
+
+@media screen and (max-width: 900px) 
+{
+  .ubication p{
+    font-size:2em;
+}
+
+}

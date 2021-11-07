@@ -1,0 +1,60 @@
+
+.text-block-about {
+  background-image: url("../../../assets/portada.jpg");
+  background-size: cover;
+  height: 50rem;
+  display: flex;
+  font-size: large !important;
+}
+
+.titles {
+  font-size: xx-large !important;
+  font-weight: bolder;
+}
+
+.text-block-about {
+  animation-duration: 1s;
+  animation-name: load_about;
+}
+@keyframes load_about {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.about-us-text{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  margin: auto auto;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 900px) {
+
+  .about-us-text{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    margin: auto auto;
+    padding: 5%;
+    border-radius: 20px;
+  }
+
+  .portada-about .text-block-about .about-us-text p {
+    font-size: small !important;
+    font-weight: bolder;
+  }
+  
+  button.about{
+   width: 100%;
+  }
+}
+

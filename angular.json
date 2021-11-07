@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jim"
+    }
+  },
+  "defaultProject": "jim",
+  "cli": {
+    "analytics": "64a87855-04b9-4183-86b0-c45ac0525750"
+  }
 }

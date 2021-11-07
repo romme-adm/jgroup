@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #e56486;
+  border: none;
+
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  font-weight: bolder;
+}
+
+button.small {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 9px 25px;
+  background-color: #e56486;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  font-size: x-small;
+}
+
+.nav-item .cto {
+  border: 1px solid #e56486;
+  color: #fff !important;
+  background-color: #e56486 !important;
+}
+
+@media screen and (max-width: 900px) {
+  button {
+    width: 100%;
+  }
+
+  button.small {
+    width: 100%;
+  }
+
+  .btn-cta {
+    font-size: small;
+  }
+
+  .nav-item .cto {
+    border: 1px solid #e56486;
+    color: #fff !important;
+    background-color: #e56486 !important;
+    height: 100%;
+  }
+}

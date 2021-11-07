@@ -1,0 +1,57 @@
+<div class="header">
+  <img src="../../../assets/logo2.png" class="img-fluid" alt="JIM group logo">
+</div>
+<nav class="navbar navbar-expand-sm bg-jim navbar-dark sticky-top navbar-custom">
+  <div class="header-mobile" (click)="show()">
+    <i class='bx bx-menu'></i>
+</div>
+  <ul class="navbar-nav">
+    <li class="nav-item" (click)="gotoAbout()">
+      <a class="nav-link">Acerca de nosotros</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="dropbtn"><i class='bx bx-down-arrow'></i> Dinámicas presenciales
+        </a>
+        <div class="dropdown-content">
+          <a (click)="navigateToDinPresencials()">Todas</a>
+          <a>NO VEO, NO HABLO, NO TOCO</a>
+          <a>LANZANDO AROS</a>
+          <a>ENCONTRANDO IGUALES</a>
+          <a>SIGUIENDO ÓRDENES</a>
+          <a>ABISMO</a>
+          <a>LABERINTO</a>
+          <a>TIC TAC TOE</a>
+          <a>PLANEADOR</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="dropbtn"><i class='bx bx-down-arrow'></i> Dinámicas online
+        </a>
+        <div class="dropdown-content">
+          <a (click)="navigateToDinPresencials()">Todas</a>
+          <a href="#">Lorem ipsum dolor sit amet </a>
+          <a href="#">Accusantium consequuntur incidunt molestiae illo.</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="dropbtn"><i class='bx bx-down-arrow'> </i> Idioma
+        </a>
+        <div class="dropdown-content" style="min-width: 70px !important;">
+          <a href="#"><img height="30px" width="50px" src="../../../assets/mexico.png"></a>
+          <a href="#"><img height="30px" width="50px" src="../../../assets/eua.png"></a>
+          <a href="#"><img height="30px" width="50px" src="../../../assets/italy.png"></a>
+          <a href="#"><img height="30px" width="50px" src="../../../assets/france.png"></a>
+          <a href="#"><img height="30px" width="50px" src="../../../assets/portugal.png"></a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <button class="cto" (click)="focusToContact()"><i class='bx bx-phone'></i> Contacto</button>
+    </li>
+  </ul>
+</nav>

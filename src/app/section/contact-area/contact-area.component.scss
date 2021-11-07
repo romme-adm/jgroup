@@ -1,0 +1,50 @@
+.input-group-prepend .input-group-text {
+  background-color: #e56486 !important;
+  border: none;
+  color: #FFF;
+}
+
+.social {
+  display:flex;
+  justify-content: center;
+}
+
+.social div i {
+  font-size: 100px;
+}
+
+.about-us-text{
+    text-align: justify;
+}
+
+.row{
+   padding: 20px 5%;
+}
+
+.cto {
+    color: #FFF;
+    background-color: rgba(28,28,28,0.75);
+    background-image: url("../../../assets/contac-area-bg.jpg");
+    background-size: cover;
+    background-image: linear-gradient(
+0deg, rgba(28,28,28,0.75),rgba(28,28,28,0.75)), url("../../../assets/contac-area-bg.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h5{
+    font-weight: bolder;
+    text-decoration: overline;
+}
+
+
+.contact-info h5 i
+{
+  font-size: larger;
+  color: #e56486 !important;
+}
+
+
+.contact-info p{
+  font-size: larger;
+}
