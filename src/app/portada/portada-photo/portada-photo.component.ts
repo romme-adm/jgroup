@@ -12,14 +12,15 @@ export class PortadaPhotoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    location.href=location.href.replace("#juegosinteractivosjimgroup","") + "#juegosinteractivosjimgroup";
   }
 
   navigateToDinOnline(){
-    this.router.navigate(['/', 'dinamimicas-presenciales']);
+    this.router.navigate(['/', 'dinamicas-online']);
   }
 
   navigateToDinPresencials(){
-    this.router.navigate(['/', 'dinamimicas-presenciales']);
+    this.router.navigate(['/', 'dinamicas-presenciales']);
   }
 
 }

@@ -1,0 +1,19 @@
+<div class="container-fluid">
+
+    <div class="all-games">
+        <div *ngFor="let game of games_on; index as i;" class="img-galery-detail img-{{i+1}}">
+            <img src="{{game.foto}}" alt="" class="img img-thumbnail">
+            <div class="text-block container">
+                    <div class="p">
+                        <h2>{{game.name}}</h2>
+                        <p>
+                            {{game.desc}}
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button (click)="viewDetail(game.id)" class="text-center"> Ver mas...</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

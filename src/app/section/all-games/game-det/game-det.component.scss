@@ -1,39 +1,182 @@
 .container-detail {
+  padding: 10px;
   display: flex;
   background-image: url("../../../../assets/portada.jpg");
   background-size: cover;
   height: 70vh;
   font-size: large !important;
+  align-items: center;
+}
+
+.header_title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 3px 0 3px;
+}
+
+.header_title p {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.header_title .close_icon {
+  position: absolute;
+  left: 96%;
 }
 
 .game-desc {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(37, 36, 37, 0.75);
   width: 80vw;
-  height: 60vh;
-  margin: auto;
+  height: auto;
+  margin: auto auto;
+  border-radius: 20px;
+  padding: 10px;
+
 }
 
-.det_game_title{
-    margin: 0 auto;
+.animation{
+  animation-name: efect;
+  animation-duration: .8s;
 }
 
-.det_struc {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  height: 80%;
-  justify-content: center;
-  align-content: center;
-  padding: 30px;
-  margin: 0 auto !important;
+
+@keyframes efect {
+
+  0%{
+    transform: scale(0.5);
+
+  }
+  66%{
+    transform: scale(1.02);
+
+  }
+  100%{
+    transform: scale(1);
+
+  }
 }
 
-.caratula img {
-  height: 100%;
-  width: 100%;
+.game-desc i {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.game-desc i:hover {
+  color: #E199CB;
+  transition: 1s;
+}
+
+.det_struc p {
+  text-align: justify;
+  font-size: medium !important;
+  padding: 1px;
+}
+
+
+
+/*end animation*/
+
+.caratula {
+  width: 40%;
+  height: 300px !important;
+  float: left;
+  margin-right: 1rem;
   object-fit: cover;
+  border-radius: 30px;
+  transition: 1s;
+  opacity: 0.8;
+  animation-name: load_imgs;
+  animation-duration: 1s;
+}
+
+@keyframes load_imgs {
+  0% {
+    transform: scale(0.5);
+  }
+  66% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.caratula:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.after .control,
+.before .control {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: auto;
+  max-height: 30vh;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.after .control:hover,
+.before .control:hover {
+  color: #E199CB;
+  transition: 1s;
+}
+.after .before {
+  margin: auto auto;
+}
+
+.control i {
+  font-size: 60px;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 900px) {
+  .container-detail {
+    height: auto;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 0 1em;
+  }
+
+  .caratula {
+    width: 100%;
+    height: 200px !important;
+  }
+
+  .header_title .close_icon {
+    position: absolute;
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .caratula {
+    width: 50% !important;
+    height: 50px !important;
+  }
+
+  .control i {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .caratula {
+    width: 100% !important;
+    height: 150px !important;
+  }
 }

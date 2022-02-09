@@ -10,8 +10,8 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    window.postMessage("rezise",location.href);
-    window.postMessage({location:"Acerca de nosotros"},location.href);
+    window.postMessage({location:"acerca de nosotros"},location.href);
+    window.postMessage({rezise:true},location.href);
   }
 
 }

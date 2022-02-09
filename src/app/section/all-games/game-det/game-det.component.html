@@ -1,29 +1,26 @@
 <div class="container-detail">
-    <div class="game-desc">
-        <div class="det_game_title">
-            <h1>text text text text</h1>
-        </div>
-        <div class="det_struc">
-            <div class="caratula">
-                    <img src="../../../../assets/tictactoe/1.jfif" class="img-thumbnail">
-            </div>
-            <div class="desc">
-                <p>
-                    LOS JUGADORES FORMARÁN PAREJAS DONDE UNA LLEVARÁ
-                                    LOS OJOS VENDADOS Y EL OTRO TENDRÁ QUE TENER LA VOZ
-                                    DE MANDO. EL JUGADOR QUE TENGA LOS OJOS VENDADOS SE
-                                    COLOCARÁ AL INICIO DE UN CAMINO CON VARIOS
-                                    OBSTÁCULOS Y TENDRÁ QUE SEGUIR LA ÓRDENES DE SU
-                                    OTRO COMPAÑERO QUE LE EXPLICARÁ COMO DEBE AVANZAR
-                                    PARA NO PISAR LOS OBSTÁCULOS, SI EL JUGADOR CON LOS
-                                    OJOS VENDADOS LLEGA A PISAR ALGÚN OBSTÁCULO DEBERÁ
-                                    INICIAR DE NUEVO EL RECORRIDO. UNA VEZ CONCLUIDO EL
-                                    RECORRIDO CAMBIARÁN DE ROL Y SE LLEVARÁ A CABO LAS
-                                    MIS INSTRUCCIONES. SE TOMARÁ EL TIEMPO Y LA PAREJA
-                                    QUE HAYA REALIZADO AMBOS RECORRIDOS EN EL MENOR
-                                    TIEMPO GANARÁ
-                </p>
-            </div>
-        </div>
+  <div class="before">
+    <div class="control"><i (click)="prev()" class='bx bx-chevrons-left'></i></div>
+  </div>
+  <div class="game-desc" id="game_desc">
+    <div class="header_title">
+      <p>
+        <span *ngIf="gameType=='dinamicas-presenciales'"><i class='bx bx-group bx-tada bx-flip-horizontal' ></i></span> 
+        <span *ngIf="gameType=='dinamicas-online'"><i class='bx bxl-zoom bx-tada bx-flip-horizontal' ></i></span> 
+        {{gameResult.name}}</p>
+      <p class="close_icon" (click)="navigateToDins()"><i class='bx bxs-x-circle'></i></p>
     </div>
+    <article class="det_struc" id="det_struc">
+      <img
+        src="{{gameResult.foto}}"
+        class="img-fluid caratula"
+      />
+      <p>
+          {{gameResult.desc}}
+      </p>
+    </article>
+  </div>
+  <div class="after">
+    <div class="control"><i (click)="next()" class='bx bx-chevrons-right'></i></div>
+  </div>
 </div>

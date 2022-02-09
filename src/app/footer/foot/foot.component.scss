@@ -1,15 +1,20 @@
+$icon-color: #E199CB;
 .footer {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #3d3d3d;
+  background-image: linear-gradient(
+    0deg,     rgba(12, 12, 12, 0.75),rgba(34, 28, 34, 0.75)), url("../../../assets/foooter_back.jfif");
+       
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
   font-size: small;
   font-weight: bolder;
   padding: 30px;
 }
+
 
 .lan{
   display: flex;
@@ -45,6 +50,7 @@
   align-items: center;
   grid-gap: 1px;
   justify-items: center;
+  color: #FFF;
 }
 
 .networks i {

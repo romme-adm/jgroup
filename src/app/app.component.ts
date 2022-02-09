@@ -15,14 +15,6 @@ export class AppComponent implements OnInit  {
       {
        this.locationText =  event.data.location;
       }
-      if(event.data == "rezise")
-      {
-        if(window.outerWidth>1000)
-                $(".navbar-nav").css("display","flex");
-        else{
-          $(".navbar-nav").css("display","none");
-        }
-      }
     });
   }
 }

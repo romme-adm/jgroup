@@ -1,5 +1,7 @@
+$icon-color: #E199CB;
+
 .input-group-prepend .input-group-text {
-  background-color: #e56486 !important;
+  background-color: $icon-color !important;
   border: none;
   color: #FFF;
 }
@@ -7,6 +9,7 @@
 .social {
   display:flex;
   justify-content: center;
+   color: #FFF !important;
 }
 
 .social div i {
@@ -27,7 +30,7 @@
     background-image: url("../../../assets/contac-area-bg.jpg");
     background-size: cover;
     background-image: linear-gradient(
-0deg, rgba(28,28,28,0.75),rgba(28,28,28,0.75)), url("../../../assets/contac-area-bg.jpg");
+0deg,     rgba(12, 12, 12, 0.75),rgba(34, 28, 34, 0.75)), url("../../../assets/contac-area-bg.jpg");
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -41,7 +44,7 @@ h5{
 .contact-info h5 i
 {
   font-size: larger;
-  color: #e56486 !important;
+  color: $icon-color !important;
 }
 
 

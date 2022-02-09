@@ -7,8 +7,10 @@ import{ PortadaModule} from '../portada/portada.module'
 import { RouterModule } from '@angular/router';
 import { ContactAreaComponent } from './contact-area/contact-area.component';
 import { GameDetComponent } from './all-games/game-det/game-det.component';
+import { GamesPreComponent } from './all-games/games-pre/games-pre.component';
+import { GamesOnComponent } from './all-games/games-on/games-on.component';
 @NgModule({
-  declarations: [AllGamesComponent, AboutComponent, ContactAreaComponent, GameDetComponent],
+  declarations: [AllGamesComponent, AboutComponent, ContactAreaComponent, GameDetComponent, GamesPreComponent, GamesOnComponent],
   imports: [
     CommonModule,
     SectionRoutingModule,

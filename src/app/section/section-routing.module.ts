@@ -6,10 +6,10 @@ import { GameDetComponent } from './all-games/game-det/game-det.component';
 const routes: Routes = [
     { path: '', redirectTo: 'quienes-somos ', pathMatch: 'full' },
     { path: 'quienes-somos', component: AboutComponent },
-    { path: 'dinamimicas-presenciales', component: AllGamesComponent },
-    { path: 'dinamimicas-presenciales/:name', component: GameDetComponent },
-    { path: 'dinamimicas-online', component: AllGamesComponent },
-    { path: 'dinamimicas-online/:name', component: GameDetComponent },
+    { path: ':game_name', component: AllGamesComponent },
+    { path: 'dinamicas-online/:name', component: GameDetComponent },
+    { path: 'dinamicas-presenciales/:name', component: GameDetComponent },
+
   ];
 
 @NgModule({

@@ -1,8 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+$botonBack : #E199CB;
+
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,9 +12,8 @@
 
 button {
   padding: 9px 25px;
-  background-color: #e56486;
+  background-color: $botonBack;
   border: none;
-
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: #fff;
@@ -24,7 +25,7 @@ button.small {
   right: 0;
   top: 50%;
   padding: 9px 25px;
-  background-color: #e56486;
+  background-color: $botonBack;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -33,9 +34,12 @@ button.small {
 }
 
 .nav-item .cto {
-  border: 1px solid #e56486;
+  background-color: #C43D9B;
   color: #fff !important;
-  background-color: #e56486 !important;
+}
+
+.nav-item .cto:hover {
+  background-color: $botonBack;
 }
 
 @media screen and (max-width: 900px) {
@@ -52,9 +56,9 @@ button.small {
   }
 
   .nav-item .cto {
-    border: 1px solid #e56486;
+    
     color: #fff !important;
-    background-color: #e56486 !important;
+    background-color: #C43D9B !important;
     height: 100%;
   }
 }

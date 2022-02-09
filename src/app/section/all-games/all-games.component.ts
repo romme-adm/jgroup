@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-all-games',
@@ -7,11 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllGamesComponent implements OnInit {
 
-  constructor() { }
+  gameType : String;
+  gameTypeTitle  : String;
+  constructor(private router: Router,private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    window.postMessage("rezise",location.href);
-    window.postMessage({location:"Dinamicas presenciales"},location.href);
+   this.gameType =  this.route.snapshot.params.game_name;
+   window.postMessage({rezise:true},location.href);
   }
+
 
 }
