@@ -18,20 +18,33 @@
 
 > POST /gbm/challenge/v1/accounts
 ```
-  {
-  "cash": 0,
-  "email": "string",
-  "countryKey": "string"
-}  
+	  {
+	  "cash": 1000,
+	  "email": "gbm@challenge.com",
+	  "countryKey": "MX"
+	  }
 ```
+> Response
+```
+
+	{
+	  "id": 4,
+	  "cash": 1000,
+	  "email": "gbm@challenge.com",
+	  "countryKey": "MX",
+	  "createdAt": "2022-05-04T19:36:55.39",
+	  "issuers": []
+	}
+```
+
 2.  Se debera indicar a la mini red de microservicios que se inician operaciones, se realiza consumiendo el siguiente servicio:
 
 > POST /gbm/challenge/v1/accounts/prepare
 ```
-{
-  "invesmentId": 0,
-  "ownerEmail": "string"
-}
+	{
+	  "invesmentId": 4,
+	  "ownerEmail": "gbm@challenge.com"
+	}
 ```
 3.  Despues de iniciar operaciones, iniciar transacciones BUY/SELL
 
@@ -39,17 +52,37 @@
 > POST /gbm/challenge/v1/accounts/{id}/orders
 ``` 
  Path
-  id
-```
-```
+  id = 4
+
  Request body BUY
 
 	{
-		  "operation": "string",
-		  "issuer_Name": "string",
-		  "total_Shares": 0,
-		  "share__Price": 0
+	  "operation": "BUY",
+	  "issuer_Name": "AAPL",
+	  "total_Shares": 5,
+	  "share__Price": 100
 	}
+```
+> Response BUY
+```
+		{
+		  "data": {
+			"cash": 500,
+			"issuers": [
+			  {
+				"issuer_name": "AAPL",
+				"total_shares": 5,
+				"share_price": 100,
+				"set_id": "7d5310d6-0bcb-4285-af29-f653ee799e67"  // importante, Representa el Id de la compra
+			  }
+			]
+		  },
+		  "reqId": "80000016-0000-fc00-b63f-84710c7967bb",
+		  "code": 201
+		}
+```
+
+```
  Request body SELL
 
 	{
@@ -59,6 +92,24 @@
 		  "share__Price": 0,
 		  "set_Id": "string"
 	}
+```
+> Response SELL
+```
+{
+  "data": {
+    "cash": 600,
+    "issuers": [
+      {
+        "issuer_name": "AAPL",
+        "total_shares": 4,
+        "share_price": 100,
+        "set_id": "7d5310d6-0bcb-4285-af29-f653ee799e67"
+      }
+    ]
+  },
+  "reqId": "80000041-0004-fd00-b63f-84710c7967bb",
+  "code": 201
+}
 ```
 #### Descripcion de soluciones.
 
@@ -79,4 +130,6 @@
 > Bus de mensajes para lograr la comunicación entre la mini red de microservicios.
 4. Docker
 > Me permitio instalar varias tecnologías de manera local.
+5. NetCore
+> Desarrollos de los microservicios
 
