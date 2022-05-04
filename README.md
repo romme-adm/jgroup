@@ -54,47 +54,47 @@
  Path
   id = 4
 
- Request body BUY
+	Request body BUY
 
-	{
-	  "operation": "BUY",
-	  "issuer_Name": "AAPL",
-	  "total_Shares": 5,
-	  "share__Price": 100
-	}
-```
-> Response BUY
-```
-		{
-		  "data": {
-			"cash": 500,
-			"issuers": [
-			  {
-				"issuer_name": "AAPL",
-				"total_shares": 5,
-				"share_price": 100,
-				"set_id": "7d5310d6-0bcb-4285-af29-f653ee799e67"  // importante, Representa el Id de la compra
-			  }
-			]
-		  },
-		  "reqId": "80000016-0000-fc00-b63f-84710c7967bb",
-		  "code": 201
-		}
+{
+  "operation": "BUY",
+  "issuer_Name": "AAPL",
+  "total_Shares": 5,
+  "share__Price": 100
+}
+
+	Response BUY
+{
+  "data": {
+	"cash": 500,
+	"issuers": [
+	  {
+		"issuer_name": "AAPL",
+		"total_shares": 5,
+		"share_price": 100,
+		"set_id": "7d5310d6-0bcb-4285-af29-f653ee799e67"  // importante, Representa el Id de la compra
+	  }
+	]
+  },
+  "reqId": "80000016-0000-fc00-b63f-84710c7967bb",
+  "code": 201
+}
 ```
 
 ```
  Request body SELL
 
-	{
-		  "operation": "string",
-		  "issuer_Name": "string",
-		  "total_Shares": 0,
-		  "share__Price": 0,
-		  "set_Id": "string"
-	}
-```
-> Response SELL
-```
+{
+  "operation": "SELL",
+  "issuer_Name": "APPL",
+  "total_Shares": 1,
+  "share__Price": 100,
+  "set_Id": "7d5310d6-0bcb-4285-af29-f653ee799e67"
+}
+
+
+Response SELL
+
 {
   "data": {
     "cash": 600,
