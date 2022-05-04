@@ -72,7 +72,7 @@
 > Gracias a su velocidad y facilidad de uso, la seleccione ya que necesitamos procesar cientos de miles de transacciones por segundo.
 2. SQLserver
 > Guarda los datos de la cuenta de inversion.
-3 RabbitMQ
+3. RabbitMQ
 > Bus de mensajes para lograr la comunicación entre la mini red de microservicios.
 
 
