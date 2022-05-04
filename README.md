@@ -18,14 +18,14 @@
 
 > POST /gbm/challenge/v1/accounts
 ```
-	  {
-	  "cash": 1000,
-	  "email": "gbm@challenge.com",
-	  "countryKey": "MX"
-	  }
-```
-> Response
-```
+	Request body
+	{
+	"cash": 1000,
+	"email": "gbm@challenge.com",
+	"countryKey": "MX"
+	}
+	 
+	 Response
 
 	{
 	  "id": 4,
