@@ -31,10 +31,17 @@
   id
 ```
 ```
- Request body
+ Request body BUY
 
 	{
-		  "timestamp": "string",
+		  "operation": "string",
+		  "issuer_Name": "string",
+		  "total_Shares": 0,
+		  "share__Price": 0
+	}
+ Request body SELL
+
+	{
 		  "operation": "string",
 		  "issuer_Name": "string",
 		  "total_Shares": 0,
