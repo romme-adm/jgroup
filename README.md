@@ -26,9 +26,13 @@
 3.  Despues de iniciar operaciones, iniciar transacciones BUY/SELL
 
 > POST /gbm/challenge/v1/accounts/{id}/orders
-* Path
+``` 
+ Path
   id
-* Request body
+```
+```
+ Request body
+
 	{
   "timestamp": "string",
   "operation": "string",
@@ -37,7 +41,7 @@
   "share__Price": 0,
   "set_Id": "string"
 	}
-
+```
 #### Descripcion de soluciones.
 
 **_GBM.Challenge.API.CreateInvesment_** : * Se encarga de crear la cuenta de inversion.
