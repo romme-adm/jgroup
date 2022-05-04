@@ -62,9 +62,12 @@
 ```
 #### Descripcion de soluciones.
 
-**_GBM.Challenge.API.CreateInvesment_** : * Se encarga de crear la cuenta de inversion.
-**_GBM.Challenge.API.OpenTransactios_** : * Se encarga de iniciar operaciones.
-**_GBM.Challenge.API.Transactions_** : * Se encarga de las transacciones BUY/SELL.
+**_GBM.Challenge.API.CreateInvesment_** : 
+> Se encarga de crear la cuenta de inversion.
+**_GBM.Challenge.API.OpenTransactios_** : 
+> Se encarga de iniciar operaciones.
+**_GBM.Challenge.API.Transactions_** : 
+> Se encarga de las transacciones BUY/SELL.
 
 #### Tecnologías.
 
