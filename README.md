@@ -74,5 +74,6 @@
 > Guarda los datos de la cuenta de inversion.
 3. RabbitMQ
 > Bus de mensajes para lograr la comunicación entre la mini red de microservicios.
-
+4. Docker
+> Me permitio instalar varias tecnologías de manera local.
 
