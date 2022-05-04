@@ -41,10 +41,13 @@
 
 > POST /gbm/challenge/v1/accounts/prepare
 ```
+	Request
 	{
 	  "invesmentId": 4,
 	  "ownerEmail": "gbm@challenge.com"
 	}
+	
+	Response : StatusOk 200
 ```
 3.  Despues de iniciar operaciones, iniciar transacciones BUY/SELL
 
