@@ -34,12 +34,12 @@
  Request body
 
 	{
-  "timestamp": "string",
-  "operation": "string",
-  "issuer_Name": "string",
-  "total_Shares": 0,
-  "share__Price": 0,
-  "set_Id": "string"
+		  "timestamp": "string",
+		  "operation": "string",
+		  "issuer_Name": "string",
+		  "total_Shares": 0,
+		  "share__Price": 0,
+		  "set_Id": "string"
 	}
 ```
 #### Descripcion de soluciones.
