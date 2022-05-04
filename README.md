@@ -66,4 +66,13 @@
 **_GBM.Challenge.API.OpenTransactios_** : * Se encarga de iniciar operaciones.
 **_GBM.Challenge.API.Transactions_** : * Se encarga de las transacciones BUY/SELL.
 
+### Tecnologías.
+
+> Redis
+Gracias a su velocidad y facilidad de uso, la seleccione ya que necesitamos procesar cientos de miles de transacciones por segundo.
+> SQLserver
+Guarda los datos de la cuenta de inversion.
+> RabbitMQ
+Bus de mensajes para lograr la comunicación entre la mini red de microservicios.
+
 
