@@ -1,27 +1,30 @@
-# Jim
+# Challenge GBM
+# Guia de instalación
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+#### Instalar y ejecutar los contenedores docker ubicados en los archivos en:
+**_DockerInstallerRabbitMQ.bash_** , **_DockerInstallerRedis.bash_** y **_DockerInstallerSQLSERVER.bash_**
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Diagrama de arquitectura de la solución.
+**_Challenge.drawio.png_**
+![alt text for screen readers](./Challenge.drawio.png "diagrama de arquitectura")
 
-## Code scaffolding
+#### Flujo de negocio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. * Se debera crear la cuenta consumiendo el siguiente recurso:
 
-## Build
+> POST /gbm/challenge/v1/accounts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. * Se debera indicar a la mini red de microservicios que se inician operaciones, se realiza consumiendo el siguiente servicio:
 
-## Running unit tests
+> POST /gbm/challenge/v1/accounts/prepare
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. * Despues de iniciar operaciones, iniciar transacciones BUY/SELL
 
-## Running end-to-end tests
+> POST /gbm/challenge/v1/accounts/{id}/orders
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Descripcion de soluciones.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**_GBM.Challenge.API.CreateInvesment_** : * Se encarga de crear la cuenta de inversion.
+**_GBM.Challenge.API.OpenTransactios_** : * Se encarga de iniciar operaciones.
+**_GBM.Challenge.API.Transactions_** : * Se encarga de las transacciones BUY/SELL.
