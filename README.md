@@ -17,13 +17,24 @@
 1.  Se debera crear la cuenta consumiendo el siguiente recurso:
 
 > POST /gbm/challenge/v1/accounts
-    
-
+```
+  {
+  "cash": 0,
+  "email": "string",
+  "countryKey": "string"
+}  
+```
 2.  Se debera indicar a la mini red de microservicios que se inician operaciones, se realiza consumiendo el siguiente servicio:
 
 > POST /gbm/challenge/v1/accounts/prepare
-
+```
+{
+  "invesmentId": 0,
+  "ownerEmail": "string"
+}
+```
 3.  Despues de iniciar operaciones, iniciar transacciones BUY/SELL
+
 
 > POST /gbm/challenge/v1/accounts/{id}/orders
 ``` 
